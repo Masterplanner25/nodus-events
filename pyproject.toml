@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nodus-events"
+version = "0.1.0"
+description = "Distributed event bus with Redis pub/sub, source-instance dedup, and pre-rehydration buffering"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Masterplanner25" }]
+dependencies = []
+
+[project.optional-dependencies]
+redis = ["redis>=4.0.0"]
+test  = ["pytest>=8.0", "fakeredis>=2.0.0", "redis>=4.0.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nodus_events*"]
