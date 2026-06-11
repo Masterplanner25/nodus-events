@@ -7,7 +7,7 @@ Local-first: events are recorded in the in-process `AuditStore` and optionally
 broadcast over Redis pub/sub when `[redis]` is installed. No required
 external dependencies — the bus works fully in local mode without Redis.
 
-> **Status:** v0.1.0 — prepared, not yet published.
+> **Status:** v0.1.0 — published on [PyPI](https://pypi.org/project/nodus-events/).
 
 ---
 
